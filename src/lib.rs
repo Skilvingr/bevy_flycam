@@ -82,7 +82,7 @@ fn player_move(
             let right = Vec3::new(local_z.z, 0., -local_z.x);
 
             for key in keys.get_pressed() {
-                match window.cursor_grab_mode() {
+                /*match window.cursor_grab_mode() {
                     CursorGrabMode::None => (),
                     _ => match key {
                         KeyCode::W => velocity += forward,
@@ -93,7 +93,7 @@ fn player_move(
                         KeyCode::LShift => velocity -= Vec3::Y,
                         _ => (),
                     },
-                }
+                }*/
             }
 
             velocity = velocity.normalize_or_zero();
